@@ -66,3 +66,27 @@ This section has moved here: https://facebook.github.io/create-react-app/docs/de
 ### `npm run build` fails to minify
 
 This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+
+
+## REACt V JQUERY
+
+In jQuery
+
+$(document).on('click', '.button', onClick)
+
+let name = "whatever"
+
+$('#myElement').append(`
+    <h1>Hello ${name}</h1>
+`);
+
+//////////////////
+In React
+
+class MyApp extends Component {
+    render() {
+        return (
+            <h1>Hello World</h1>
+        )
+    }
+}
