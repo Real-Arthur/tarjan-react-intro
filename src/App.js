@@ -14,9 +14,16 @@ class App extends Component {
   // anything you need to know about component
   // things that can change
   // App states
+  // each component has its own state
+  ////// Initial state
+  ////// When app loads
   state = {
     whatDayIsIt: 'Tuesday Day',
     feeling: 'Lit'
+  }
+
+  someFunction(){
+    console.log('this is a state ', this.state)
   }
 
   // JSX === "javascript extender"
@@ -24,6 +31,9 @@ class App extends Component {
     // 'this' refers to App
     console.log('App state is: ', this.state);
     console.log('this is: ', this)
+
+    // can call a function inside another one
+    this.someFunction();
 
     let whatDayIsIt = "Taco Day";
     return (
