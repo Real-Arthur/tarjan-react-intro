@@ -27,15 +27,17 @@ class App extends Component {
   }
 
   // JSX === "javascript extender"
+  // render is kind of like onReady
   render() {
     // 'this' refers to App
     console.log('App state is: ', this.state);
     console.log('this is: ', this)
 
     // can call a function inside another one
+    // won't call outside function unless called in render
     this.someFunction();
 
-    let whatDayIsIt = "Taco Day";
+    // let whatDayIsIt = "Taco Day";
     return (
       <div>
         <h1>{this.state.feeling} {this.state.whatDayIsIt}!</h1>
